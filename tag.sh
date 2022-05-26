@@ -2,7 +2,7 @@
 
 # CONTRIBUTION
 ## Author: Tom Sapletta
-## Created Date: 23.05.2022
+## Created Date: 26.05.2022
 
 ## EXAMPLE
 # cat index.html | ./tag.sh title

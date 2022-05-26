@@ -11,13 +11,17 @@ w ramach projektu apidsl.com
 start tests
 
 ```bash
-./test.sh > test.txt
+./test.sh > test2.txt
+```
+
+compare with valid test
+```bash
+diff text1.txt test2.txt
 ```
 
 check the result
-
 ```bash
-cat test.txt
+cat test2.txt
 ```
 
     cat test.txt

@@ -1,0 +1,10 @@
+
+TEST: empty_content.sh
+stdin HTML Content is empty (cat index.html | ./tag.sh title)
+
+TEST: empty_tag.sh
+HTML TAG is empty, (e.g.: title, body, header)
+
+TEST: title_tag.sh
+Softreck &#124; Leadership Through Software Development
+

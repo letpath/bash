@@ -1,6 +1,6 @@
 #!/bin/bash
 ## prepare example of file: index.html
-curl "https://softreck.com" -o index.html
+curl "https://softreck.com" --silent -o index.html
 echo ""
 
 ## Test
