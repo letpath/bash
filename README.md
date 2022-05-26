@@ -5,11 +5,11 @@
 
 ## How to start
 
-  git clone https://github.com/letpath/bash
+    git clone https://github.com/letpath/bash
 
 or just tag function:
 
-  curl https://bash.letpath.com/tag.sh
+    curl https://bash.letpath.com/tag.sh
 
 ## START
 
