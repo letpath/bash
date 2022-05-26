@@ -1,33 +1,43 @@
 # [bash.letpath.com](bash.letpath.com)
 
+## About
+
+
+## How to start
+
+  git clone https://github.com/letpath/bash
+
+or just tag function:
+
+  curl https://bash.letpath.com/tag.sh
+
+## TODO
 
 w ramach projektu apidsl.com
 + zamiast xpath - ładowanie zalezności przez skrypt github
 + letPath - przygotować
   https://github.com/letpath/bash
 
+
 ## TEST
 
-start tests
-
+start tests:
 ```bash
 ./test.sh > test2.txt
 ```
 
-compare with valid test
+compare with valid test:
 ```bash
 diff text1.txt test2.txt
 ```
 
-check the result
+check the result:
 ```bash
 cat test2.txt
 ```
 
-    cat test.txt
-    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-    Dload  Upload   Total   Spent    Left  Speed
-    100 76309  100 76309    0     0   152k      0 --:--:-- --:--:-- --:--:--  152k
+Output:    
+
     
     TEST: empty_content.sh
     stdin HTML Content is empty (cat index.html | ./tag.sh title)
