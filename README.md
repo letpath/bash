@@ -21,17 +21,17 @@ w ramach projektu apidsl.com
 
 ## TEST
 
-start tests:
+Start tests:
 ```bash
 ./test.sh > test2.txt
 ```
 
-compare with valid test:
+Compare with valid test:
 ```bash
 diff text1.txt test2.txt
 ```
 
-check the result:
+Check the result:
 ```bash
 cat test2.txt
 ```
