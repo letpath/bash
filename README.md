@@ -37,13 +37,25 @@ cat test2.txt
 ```
 
 Output:    
-
     
-    TEST: empty_content.sh
+    TEST:
+    CONTENT: empty_content.sh
+    #!/bin/bash
+    ./tag.sh title
+    OUTPUT:
     stdin HTML Content is empty (cat index.html | ./tag.sh title)
     
-    TEST: empty_tag.sh
+    TEST:
+    CONTENT: empty_tag.sh
+    #!/bin/bash
+    cat index.html | ./tag.sh
+    OUTPUT:
     HTML TAG is empty, (e.g.: title, body, header)
     
-    TEST: title_tag.sh
+    TEST:
+    CONTENT: title_tag.sh
+    #!/bin/bash
+    cat index.html | ./tag.sh title
+    OUTPUT:
     Softreck &#124; Leadership Through Software Development
+    
