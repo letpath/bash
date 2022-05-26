@@ -7,11 +7,11 @@ echo ""
 TEST_FILE_LIST=$(ls test)
 for FILE in $TEST_FILE_LIST
 do
-  echo "TEST:"
-  echo "CONTENT: $FILE"
+  echo "# TEST"
+  echo "FILE: $FILE"
   cat test/$FILE
   echo ""
   echo "OUTPUT:"
-  ./test/$FILE
+  sh test/$FILE
   echo ""
 done

@@ -11,6 +11,19 @@ or just tag function:
 
   curl https://bash.letpath.com/tag.sh
 
+## START
+
+get title tag from file: index.html
+
+```bash
+cat index.html | ./tag.sh title
+```
+
+OUTPUT:
+
+    Softreck &#124; Leadership Through Software Development
+
+
 ## TODO
 
 w ramach projektu apidsl.com
@@ -37,25 +50,24 @@ cat test2.txt
 ```
 
 Output:    
+
     
-    TEST:
-    CONTENT: empty_content.sh
-    #!/bin/bash
+    # TEST
+    FILE: empty_content.sh
     ./tag.sh title
     OUTPUT:
     stdin HTML Content is empty (cat index.html | ./tag.sh title)
     
-    TEST:
-    CONTENT: empty_tag.sh
-    #!/bin/bash
+    # TEST
+    FILE: empty_tag.sh
     cat index.html | ./tag.sh
     OUTPUT:
     HTML TAG is empty, (e.g.: title, body, header)
     
-    TEST:
-    CONTENT: title_tag.sh
-    #!/bin/bash
+    # TEST
+    FILE: title_tag.sh
     cat index.html | ./tag.sh title
     OUTPUT:
     Softreck &#124; Leadership Through Software Development
     
+
