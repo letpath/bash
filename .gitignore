@@ -1,3 +1,11 @@
+reactphp
+whois-registrar
+*/out.csv
+bash
+apimacro
+grabwhois
+reactphp/
+.idea
 # Logs
 logs
 *.log
