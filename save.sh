@@ -1,4 +1,13 @@
 #!/bin/bash
+
+# CONTRIBUTION
+## Author: Tom Sapletta
+## Created Date: 26.05.2022
+
+## EXAMPLE
+# cat index.html | ./tag.sh title
+
+# START
 [ -t 0 ] && echo "stdin File Content is empty" && exit
 IFS='' read -d '' -r CONTENT
 [ -z "$1" ] && echo "FILENAME is empty" && exit
