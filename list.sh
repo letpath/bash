@@ -12,6 +12,6 @@
 [ -z "$PATHH" ] && PATHH=$1
 [ ! -z "$1" ] && OPTIONS=$1
 #PATH_FILE="./${FILENAME}"
-[ -z "$OPTIONS" ] && ls
-#[ -z "$OPTIONS" ] && ls $PATH_FILE
+#[ -z "$OPTIONS" ] && ls
+[ ! -z "$OPTIONS" ] && ls $OPTIONS
 #[ ! -z "$OPTIONS" ] && ls $OPTIONS $PATH_FILE
