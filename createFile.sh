@@ -1,8 +1,12 @@
 #!/bin/bash
 FILENAME=$1
 CONTENT=
-[ ! -z "$FILENAME" ] && IFS='' read -d '' -r CONTENT
-[ -z "$CONTENT" ] &&  touch "${FILENAME}"
-[ -z "$FILENAME" ] && IFS='' read -d '' -r FILENAME
-[ ! -z "$FILENAME" ] && echo -n "$CONTENT" > $FILENAME
-
+[ ! -t 0 ] && IFS='' read -d '' -r CONTENT
+[ -z "$FILENAME" ] && FILENAME=$CONTENT
+[ -z "$FILENAME" ] && [ -z "$CONTENT" ] && echo "input data is empty" && exit
+#
+if [ ! -z "$FILENAME" ] && [ -z "$CONTENT" ]; then
+  touch "${FILENAME}"
+else
+  echo -n "$CONTENT" > $FILENAME
+fi
