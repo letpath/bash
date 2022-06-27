@@ -5,8 +5,9 @@ CONTENT=
 [ -z "$FILENAME" ] && FILENAME=$CONTENT
 [ -z "$FILENAME" ] && [ -z "$CONTENT" ] && echo "input data is empty" && exit
 #
-if [ ! -z "$FILENAME" ] && [ -z "$CONTENT" ]; then
-  touch "${FILENAME}"
-else
-  echo -n "$CONTENT" > $FILENAME
-fi
+echo -n "$CONTENT" > $FILENAME
+#if [ ! -z "$FILENAME" ] && [ -z "$CONTENT" ]; then
+#  touch "${FILENAME}"
+#else
+#  echo -n "$CONTENT" > $FILENAME
+#fi
