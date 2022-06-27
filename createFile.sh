@@ -3,5 +3,5 @@ FILENAME=$1
 CONTENT=
 [ ! -z "$FILENAME" ] && IFS='' read -d '' -r CONTENT
 [ -z "$FILENAME" ] && IFS='' read -d '' -r FILENAME
-[ ! -z "$FILENAME" ] && echo "$CONTENT" > $FILENAME
+[ ! -z "$FILENAME" ] && echo -n "$CONTENT" > $FILENAME
 
