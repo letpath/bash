@@ -1,6 +1,9 @@
 #!/bin/bash
-[ ! -t 0 ] && IFS='' read -d '' -r CONTENT
-echo -n "${CONTENT}"
-[ -z "$1" ] && echo "FILENAME is empty" && exit
-FILENAME=$1
-[ ! -z "$FILENAME" ] && echo -n "," && cat $FILENAME
+if [ ! -t 0 ]; then
+  IFS='' read -d '' -r INPUT
+  echo -n "${INPUT}"
+  echo -n ","
+fi
+if [ ! -z "$1" ]; then
+  cat $1
+fi
