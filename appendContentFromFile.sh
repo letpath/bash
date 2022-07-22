@@ -4,5 +4,5 @@ if [ ! -t 0 ]; then
   echo -n "${INPUT}"
 fi
 if [ ! -z "$1" ]; then
-  cat $1
+   [ -r "$1" ] && cat $1
 fi
