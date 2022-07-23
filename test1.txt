@@ -1,19 +1,43 @@
 
 # TEST
-FILE: empty_content.sh
-./tag.sh title
+FILE: appendCellFromFile.sh
+#!/bin/bash
+echo -n "one" | ./appendCellFromFile.sh "text.txt"
 OUTPUT:
-stdin HTML Content is empty (cat index.html | ./tag.sh title)
+one,text
 
 # TEST
-FILE: empty_tag.sh
-cat index.html | ./tag.sh
+FILE: appendContentFromFile.sh
+#!/bin/bash
+echo -n "one" | ./appendContentFromFile.sh "text.txt"
 OUTPUT:
-HTML TAG is empty, (e.g.: title, body, header)
+onetext
 
 # TEST
-FILE: title_tag.sh
-cat index.html | ./tag.sh title
+FILE: appendToFile.sh
+#!/bin/bash
+echo "text" | ./appendToFile.sh "filename.txt"
+./appendToFile.sh "filename.txt"
 OUTPUT:
-Softreck &#124; Leadership Through Software Development
+stdin File Content is empty
+
+# TEST
+FILE: createFile.sh
+#!/bin/bash
+echo "text" | ./createFile.sh "filename.txt"
+./createFile.sh "filename.txt"
+./createFile.sh
+cat "filename.txt"
+OUTPUT:
+input data is empty
+
+# TEST
+FILE: list.sh
+#!/bin/bash
+company="ionos"
+year="2021"
+month_year="12.2021"
+./list.sh "/media/tom/projects/softreck-invoices/$year/$month_year/$company/*.pdf"
+OUTPUT:
+/media/tom/projects/softreck-invoices/2021/12.2021/ionos/RG_100094959685.pdf
 
